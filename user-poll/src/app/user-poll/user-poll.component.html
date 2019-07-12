@@ -1,0 +1,18 @@
+<aside>
+    <h1>Hello {{userName}}</h1>
+    <h2>Poll: Are you Excited about Angular Elements?</h2>
+  
+    <div *ngIf="!hasVoted">
+        <button (click)="onVote('yes')" class="bg-green">Yes!</button>
+        <button (click)="onVote('no')" class="bg-red">No</button>
+    </div>
+  
+  
+    <div *ngIf="hasVoted" >
+        <span *ngIf="vote === 'yes'">Glad you feel that way. :)</span>
+        <span *ngIf="vote === 'no'">Sorry you feel that way. :(</span>
+        <span style="margin-left:5px;">Thanks for voting!</span>        
+        <button (click)="onGoBack()">Go Back</button>
+    </div>
+  
+  </aside>

@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Recent events</h1>
+      <p class="lead">This will listen for events from other micro frontends.</p>
+      <hr class="my-4">
+      <span id="event-added-message" class="text-success font-weight-bold" style="display: none" #eventAddedMessage>
+          <fa-icon [icon]="faCheck"></fa-icon> New Event Added!
+      </span>
+      <ul>
+          <li *ngFor="let event of events">{{event.source}} fired off {{event.event}}</li>
+      </ul>
+      <div *ngIf="events.length === 0">
+            No events yet <span class="text-warning"><fa-icon [icon]="faSad"></fa-icon></span>
+      </div>
+    </div>
+  </body>
+</html>

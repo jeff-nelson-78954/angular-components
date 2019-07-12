@@ -1,0 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.jumbotron {
+    padding: 2rem 2rem;
+}
+#event-added-message {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+svg {
+    height: 25px;
+}

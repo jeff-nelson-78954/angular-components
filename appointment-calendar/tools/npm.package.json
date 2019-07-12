@@ -1,0 +1,11 @@
+{
+    "name": "jnelson-ae-appointment-calendar",
+    "version": "1.1.1",
+    "description": "A test for angular elements",
+    "license": "MIT",
+    "author": {
+        "name": "Jeff Nelson",
+        "github": "https://github.com/jeff-nelson-78954"
+    },
+    "main": "main-es5.js"
+}

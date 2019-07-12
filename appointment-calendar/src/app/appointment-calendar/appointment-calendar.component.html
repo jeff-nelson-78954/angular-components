@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <div class="card mb-3">
+            <div class="card-header">
+                <b>Add event</b>
+            </div>
+            <div class="card-body">
+            <form [formGroup]="eventForm" (ngSubmit)="onAddEvent()">
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="eventTitle" placeholder="Title" formControlName="eventTitle" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="date" class="form-control" id="eventDate" placeholder="Date" formControlName="eventDate" required>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-outline-primary" [disabled]="eventForm.status !== 'VALID'">Add</button>                   
+                        </div>
+                    </div>  
+                </form> 
+            </div>
+        </div>  
+        <div class="card">
+            <div class="card-header" *ngIf="calendarName">
+                <b>{{calendarName}}</b>
+            </div>
+            <div class="card-body">
+                <full-calendar #calendar
+                    defaultView="dayGridMonth" 
+                    theme="standard"
+                    [plugins]="calendarPlugins" 
+                    [events]="events">
+                </full-calendar>
+            </div>
+        </div>
+    </body>
+</html>

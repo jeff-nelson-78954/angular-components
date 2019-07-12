@@ -1,0 +1,14 @@
+{
+  "name": "angular-components-web",
+  "version": "1.0.0",
+  "description": "A test project to see how angular components works together.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jnelson-ae-appointment-calendar": "^1.1.1",
+    "jnelson-ae-event-listener": "^1.0.2",
+    "jnelson-ae-user-poll": "^1.0.5"
+  }
+}
