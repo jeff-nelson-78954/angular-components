@@ -135,6 +135,28 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Components\Common\polyfills-es2015.js" />
+    <Content Include="Components\Common\polyfills-es5.js" />
+    <Content Include="Components\Common\runtime-es2015.js" />
+    <Content Include="Components\Common\runtime-es5.js" />
+    <Content Include="Components\HelloWorld2\3rdpartylicenses.txt" />
+    <Content Include="Components\HelloWorld2\favicon.ico" />
+    <Content Include="Components\HelloWorld2\index.html" />
+    <Content Include="Components\HelloWorld2\main-es2015.js" />
+    <Content Include="Components\HelloWorld2\main-es5.js" />
+    <Content Include="Components\HelloWorld2\scripts.js" />
+    <Content Include="Components\HelloWorld\3rdpartylicenses.txt" />
+    <Content Include="Components\HelloWorld\favicon.ico" />
+    <Content Include="Components\HelloWorld\index.html" />
+    <Content Include="Components\HelloWorld\main-es2015.js" />
+    <Content Include="Components\HelloWorld\main-es5.js" />
+    <Content Include="Components\HelloWorld\scripts.js" />
+    <Content Include="Components\UserPoll\3rdpartylicenses.txt" />
+    <Content Include="Components\UserPoll\favicon.ico" />
+    <Content Include="Components\UserPoll\index.html" />
+    <Content Include="Components\UserPoll\main-es2015.js" />
+    <Content Include="Components\UserPoll\main-es5.js" />
+    <Content Include="Components\UserPoll\scripts.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -181,6 +203,8 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\zone.js" />
+    <Content Include="Scripts\zone.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

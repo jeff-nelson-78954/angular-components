@@ -15,8 +15,7 @@ export class UserPollComponent implements OnInit, OnDestroy {
   hasVoted = false;
   stopListening: any;
 
-  // manually grab the change detector so we do not need zone js.
-  // the render will listed to messages posted to the window
+  // the render will listen to messages posted to the window
   constructor(private renderer: Renderer2) {
     this.stopListening = renderer.listen('window', 'message', this.handleMessage.bind(this));
   }

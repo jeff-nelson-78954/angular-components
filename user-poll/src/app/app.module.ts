@@ -11,7 +11,8 @@ import { UserPollComponent } from './user-poll/user-poll.component';
   imports: [
     BrowserModule
   ],
-  providers: []
+  providers: [],
+  entryComponents: [UserPollComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {}

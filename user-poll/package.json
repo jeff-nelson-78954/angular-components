@@ -1,4 +1,4 @@
-{
+cd{
   "name": "user-poll",
   "version": "0.0.0",
   "scripts": {
@@ -11,6 +11,7 @@
     "copy-npm-file": "copy \"tools\\npm.package.json\" \"dist\\user-poll\\package.json\"",
     "build-component": "ng build --prod --single-bundle true --output-hashing none",
     "publish-component": "npm run build-component && npm run copy-npm-file && cd dist/user-poll && npm publish",
+    "start-prd-server": "npm run build-component && node ./server/index.js",
     "npx-build-plus:copy-assets": "node copy-wc-polyfill.js"
   },
   "private": true,
@@ -51,6 +52,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "express": "^4.15.3"
   }
 }

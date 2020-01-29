@@ -2,39 +2,40 @@
     ViewBag.Title = "Home Page";
 }
 
-<style>
-@@font-face {
-    font-family: 'fcicons';
-    src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format("truetype");
-    font-weight: normal;
-    font-style: normal; }
-</style>
-<div class="row highlight mt-30">
-    <h3>Parent component communication</h3>
-    <div class="col-md-4">
-        <h4>Voting microfront end</h4>
-        <ul>
-            <li>Input: userName</li>
-            <li>Output: userVoted <span id="voteEvent" style="font-weight:bold"></span></li>
-            <li>Listens for: user-poll-vote <input type="button" value="Vote Yes" id="btnVoteYes" class="btn btn-primary" /></li>
-        </ul>
+@*<style>
+        @@font-face {
+            font-family: 'fcicons';
+            src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <div class="row highlight mt-30">
+        <h3>Parent component communication</h3>
+        <div class="col-md-4">
+            <h4>Voting microfront end</h4>
+            <ul>
+                <li>Input: userName</li>
+                <li>Output: userVoted <span id="voteEvent" style="font-weight:bold"></span></li>
+                <li>Listens for: user-poll-vote <input type="button" value="Vote Yes" id="btnVoteYes" class="btn btn-primary" /></li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <h4>Calendar microfront end</h4>
+            <ul>
+                <li>Input: calendarName</li>
+                <li>Output: eventAdded <span id="eventAdded" style="font-weight:bold"></span></li>
+                <li>
+                    Listens for: appointment-calendar-add-event
+                    <input type="text" id="txtTitle" placeholder="Title" />
+                    <input type="date" id="txtDate" placeholder="Date" />
+                    <input type="button" value="Add" id="btnAddEvent" class="btn btn-primary" />
+                </li>
+                <li>Listens for: appointment-calendar-set-events <input type="button" value="Clear Events" id="btnClearEvents" class="btn btn-primary" /></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-md-8">
-        <h4>Calendar microfront end</h4>
-        <ul>
-            <li>Input: calendarName</li>
-            <li>Output: eventAdded <span id="eventAdded" style="font-weight:bold"></span></li>
-            <li>
-                Listens for: appointment-calendar-add-event
-                <input type="text" id="txtTitle" placeholder="Title" />
-                <input type="date" id="txtDate" placeholder="Date" />
-                <input type="button" value="Add" id="btnAddEvent" class="btn btn-primary" />
-            </li>
-            <li>Listens for: appointment-calendar-set-events <input type="button" value="Clear Events" id="btnClearEvents" class="btn btn-primary" /></li>
-        </ul>
-    </div>
-</div>
-
+*@
 <div class="row mt-30">
     <div class="col-md-4">
         <user-poll user-name="Jeff"></user-poll>
@@ -44,49 +45,137 @@
     </div>
 </div>
 <div class="row mt-10">
-    <div class="col">        
+    <div class="col">
         <appointment-calendar calendar-name="Appointment Calendar"></appointment-calendar>
     </div>
 </div>
 
+<hello-world></hello-world>
+<br />
+<br />
+<br />
+<hello-world2></hello-world2>
+
+
 @section Scripts {
-    <script src="~/node_modules/jnelson-ae-user-poll/main-es2015.js" type="module"></script>
-    <script src="~/node_modules/jnelson-ae-user-poll/main-es5.js" nomodule></script>
-    <script src="~/node_modules/jnelson-ae-appointment-calendar/main-es2015.js" type="module"></script>
-    <script src="~/node_modules/jnelson-ae-appointment-calendar/main-es5.js" nomodule></script>
-    <script src="~/node_modules/jnelson-ae-event-listener/main-es2015.js" type="module"></script>
-    <script src="~/node_modules/jnelson-ae-event-listener/main-es5.js" nomodule></script>
+    @*<script src="~/node_modules/@("@angular")/core/esm5/core.js"></script>*@
 
-    <script>
-        $(function () {
-            // the angular element has @@Output() userVoted that this hooks into.
-            // proves this window can listed for events
-            $('user-poll').on('userVoted', function (event) {
-                $('#voteEvent').html('(' + event.detail + ')');
-            });
-            // Angular element is listing for a message. Triggers an event.
-            $('#btnVoteYes').click(() => {
-                const message = { type: 'user-poll-vote', data: 'yes' };
-                window.postMessage(message);
-            });
+    @*<script src="~/Components/HelloWorld/runtime-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld/polyfills-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld/runtime-es5.js" nomodule></script>
+        <script src="~/Components/HelloWorld/polyfills-es5.js" nomodule></script>
+        <script src="~/Components/HelloWorld/scripts.js"></script>
+        <script src="~/Components/HelloWorld/main-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld/main-es5.js" nomodule></script>*@
 
-            $('appointment-calendar').on('eventAdded', function (event) {
-                $('#eventAdded').html('(' + JSON.stringify(event.detail) + ')');
-            });
+    @*<script src="~/Components/HelloWorld2/runtime-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld2/polyfills-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld2/runtime-es5.js" nomodule></script>
+        <script src="~/Components/HelloWorld2/polyfills-es5.js" nomodule></script>
+        <script src="~/Components/HelloWorld2/scripts.js"></script>
+        <script src="~/Components/HelloWorld2/main-es2015.js" type="module"></script>
+        <script src="~/Components/HelloWorld2/main-es5.js" nomodule></script>*@
 
-            $('#btnAddEvent').click(() => {
-                if ($('#txtTitle').val() && $('#txtDate').val()) {
-                    const message = { type: 'appointment-calendar-add-event', data: { title: $('#txtTitle').val(), date: $('#txtDate').val() } };
+    @*<script type="text/javascript" src="/node_modules/@("@webcomponents")/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+        <script src="/node_modules/@("@webcomponents")/webcomponentsjs/webcomponents-loader.js"></script>*@
+
+    @*<script src="/node_modules/@("@webcomponents")/webcomponentsjs/webcomponents-loader.js"></script>*@
+
+    <script src="~/Components/Common/runtime-es2015.js" type="module"></script>
+    <script src="~/Components/Common/polyfills-es2015.js" type="module"></script>
+    <script src="~/Components/Common/runtime-es5.js" nomodule></script>
+    <script src="~/Components/Common/polyfills-es5.js" nomodule></script>
+
+
+    <script src="~/Components/HelloWorld/scripts.js"></script>
+    <script src="~/Components/HelloWorld/main-es2015.js" type="module"></script>
+    <script src="~/Components/HelloWorld/main-es5.js" nomodule></script>
+
+    <script src="~/Components/HelloWorld2/scripts.js"></script>
+    <script src="~/Components/HelloWorld2/main-es2015.js" type="module"></script>
+    <script src="~/Components/HelloWorld2/main-es5.js" nomodule></script>
+
+    @*<script src="~/Components/UserPoll/scripts.js"></script>
+    <script src="~/Components/UserPoll/main-es2015.js" type="module"></script>
+    <script src="~/Components/UserPoll/main-es5.js" nomodule></script>*@
+
+    @*<script>
+            if (!window['customElements']) {
+                const script = document.createElement('script');
+                script.src = '/Components/user-poll/assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+                document.writeln(script.outerHTML);
+            }
+        </script>*@
+
+    @*<script src="~/Components/user-poll/assets/custom-elements/custom-elements.min.js"></script>
+        <script src="~/Components/user-poll/assets/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+        <script src="~/Components/user-poll/assets/webcomponentsjs/webcomponents-loader.js"></script>*@
+
+    @*<script src="~/node_modules/zone.js/dist/zone.min.js"></script>*@
+
+    @*<script src="~/Components/user-poll2/polyfills-es5.2219c87348e60efc0076.js" nomodule></script>
+        <script src="~/Components/user-poll2/polyfills-es2015.4d31cca2afc45cfd85b5.js" type="module"></script>
+
+        <script src="~/Components/user-poll2/runtime-es5.465c2333d355155ec5f3.js" nomodule></script>
+        <script src="~/Components/user-poll2/runtime-es2015.703a23e48ad83c851e49.js" type="module"></script>
+
+        <script src="~/Components/user-poll2/main-es5.9985b56bc787503b351b.js" nomodule></script>
+        <script src="~/Components/user-poll2/main-es2015.596cba04f25d278ce0c2.js" type="module"></script>*@
+
+    @*<script src="~/Components/user-poll/polyfills-es2015.cbaf8e00f0b022d1dfb1.js" type="module"></script>
+        <script src="~/Components/user-poll/polyfills-es5.95a0fdc0f3302842198c.js" nomodule></script>
+
+        <script src="~/Components/user-poll/runtime-es2015.703a23e48ad83c851e49.js" type="module"></script>
+        <script src="~/Components/user-poll/runtime-es5.465c2333d355155ec5f3.js" nomodule></script>
+
+        <script src="~/Components/user-poll/main-es2015.536316e5c754231b8c12.js" type="module"></script>
+        <script src="~/Components/user-poll/main-es5.11549c4e201522d124dd.js" nomodule></script>*@
+
+
+    @*<noscript>Please enable JavaScript to view this website.</noscript>
+
+        <script>if (!window.customElements) { document.write("<!--") }</script>
+        <script type="text/javascript" src="/node_modules/@("@webcomponents")/webcomponentsjs/custom-elements-es5-adapter.js"></script>! do not remove
+        <script src="/node_modules/@("@webcomponents")/webcomponentsjs/webcomponents-loader.js"></script>*@
+
+
+    @*<script src="~/node_modules/jnelson-ae-user-poll/main-es2015.js" type="module"></script>
+        <script src="~/node_modules/jnelson-ae-user-poll/main-es5.js" nomodule></script>
+        <script src="~/node_modules/jnelson-ae-appointment-calendar/main-es2015.js" type="module"></script>
+        <script src="~/node_modules/jnelson-ae-appointment-calendar/main-es5.js" nomodule></script>
+        <script src="~/node_modules/jnelson-ae-event-listener/main-es2015.js" type="module"></script>
+        <script src="~/node_modules/jnelson-ae-event-listener/main-es5.js" nomodule></script>*@
+
+    @*<script>
+            $(function () {
+                // the angular element has @@Output() userVoted that this hooks into.
+                // proves this window can listed for events
+                $('user-poll').on('userVoted', function (event) {
+                    $('#voteEvent').html('(' + event.detail + ')');
+                });
+                // Angular element is listing for a message. Triggers an event.
+                $('#btnVoteYes').click(function () {
+                    const message = { type: 'user-poll-vote', data: 'yes' };
                     window.postMessage(message);
-                    $('#txtTitle').val('');
-                    $('#txtDate').val('');
-                }                
-            });
+                });
 
-            $('#btnClearEvents').click(() => {
-                const message = { type: 'appointment-calendar-set-events', data: [] };
-                window.postMessage(message);
+                $('appointment-calendar').on('eventAdded', function (event) {
+                    $('#eventAdded').html('(' + JSON.stringify(event.detail) + ')');
+                });
+
+                $('#btnAddEvent').click(function () {
+                    if ($('#txtTitle').val() && $('#txtDate').val()) {
+                        const message = { type: 'appointment-calendar-add-event', data: { title: $('#txtTitle').val(), date: $('#txtDate').val() } };
+                        window.postMessage(message);
+                        $('#txtTitle').val('');
+                        $('#txtDate').val('');
+                    }
+                });
+
+                $('#btnClearEvents').click(function () {
+                    const message = { type: 'appointment-calendar-set-events', data: [] };
+                    window.postMessage(message);
+                });
             });
-        });
-    </script>
+        </script>*@
 }

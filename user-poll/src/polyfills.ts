@@ -63,8 +63,8 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  */
 
 // tslint:disable-next-line: no-string-literal
-if (!window['customElements']) {
-  const script = document.createElement('script');
-  script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
-  document.writeln(script.outerHTML);
-}
+// if (!window['customElements']) {
+//   const script = document.createElement('script');
+//   script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+//   document.writeln(script.outerHTML);
+// }
